@@ -1,0 +1,87 @@
+* {
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  max-width: 80%;
+  min-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  height: 50px;
+  width: 50px;
+}
+
+.projects {
+  margin-top: 10%;
+  width: 90%;
+  /*height: 90%;*/
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects img {
+  /*border: 1px solid red;*/
+  height: 400px;
+  width: 400px;
+}
+
+.projects .left, .middle, .right {
+  position: relative;
+}
+
+.projects img{
+  position: relative;
+}
+
+.projects .left span {
+  position: absolute;
+  font-size: 30px;
+  background-color: transparent;
+  color: white;
+  top: 40%;
+  left: 25%;
+  visibility: hidden;
+}
+
+.projects .middle span {
+  position: absolute;
+  font-size: 30px;
+  background-color: transparent;
+  color: white;
+  top: 40%;
+  left: 33%;
+  visibility: hidden;
+}
+
+.projects .right span {
+  position: absolute;
+  font-size: 30px;
+  background-color: transparent;
+  color: white;
+  top: 40%;
+  left: 37%;
+  visibility: hidden;
+}
+
+.projects img:hover {
+  transition: 0.25s;
+  filter: brightness(50%);
+}
+
+.projects .left:hover span,
+.projects .middle:hover span,
+.projects .right:hover span{
+  transition: 1s;
+  visibility: visible;
+}
