@@ -172,14 +172,23 @@ PROFILE STYLES
 }
 
 .subject {
+  min-width: 20%;
   font-size: 40px;
+  margin-right: 30%;
+}
+
+.about {
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .skills {
   margin-top: 10%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .list ul {
