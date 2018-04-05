@@ -1,6 +1,6 @@
 * {
   background-color: #f9f9f9;
-  font-family: sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   user-select: none;
 }
 
@@ -16,8 +16,8 @@ a {
 
 .navbar {
   padding-top: 30px;
-  max-width: 80%;
-  min-width: 80%;
+  max-width: 90%;
+  min-width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,15 +37,13 @@ a {
 }
 
 .projects {
-  margin-top: 10%;
-  width: 90%;
-  /*height: 90%;*/
+  margin-top: 5%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
 .projects img {
-  /*border: 1px solid red;*/
   height: 400px;
   width: 400px;
 }
@@ -60,12 +58,12 @@ a {
 
 .mask {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
   height: 400px;
   width: 400px;
-  font-size: 30px;
   background-color: transparent;
   top: 0;
   left: 0;
@@ -80,11 +78,58 @@ a {
 
 .mask .text {
   background-color: transparent;
+  font-size: 30px;
   color: white;
+  margin-bottom: 15px;
+}
+
+.mask .subtext {
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 30px;
 }
 
 .projects .left:hover .mask,
 .projects .middle:hover .mask,
 .projects .right:hover .mask{
   visibility: visible;
+}
+
+.links {
+  width: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links a {
+  background-color: transparent;
+  text-decoration: underline;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.links a:hover {
+  filter: brightness(70%);
+}
+
+.footer {
+  margin-top: 70px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 20px;
+}
+
+.footer span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
 }
