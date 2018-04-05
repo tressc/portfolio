@@ -35,15 +35,15 @@ a {
 }
 
 .navbar img {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
 }
 
 .navbar .right a{
   border: 2px solid black;
   padding: 3px 7px;
   color: black;
-  font-size: 20px;
+  font-size: 30px;
   border-radius: 3px;
 }
 
