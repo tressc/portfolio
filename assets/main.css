@@ -15,12 +15,23 @@ a {
 }
 
 .navbar {
-  padding-top: 30px;
-  max-width: 90%;
-  min-width: 90%;
+  padding: 3% 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .left {
+  margin-left: 10%;
+  opacity: 2.0;
+}
+
+.navbar .right {
+  margin-right: 10%;
 }
 
 .navbar img {
@@ -37,7 +48,7 @@ a {
 }
 
 .projects {
-  margin-top: 5%;
+  margin-top: 15%;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -132,4 +143,47 @@ a {
 .footer ul {
   list-style: none;
   padding: 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .projects .left,
+    .projects .middle,
+    .projects .right {
+      margin-top: 5%;
+      width: 90%;
+      height: 33%;
+      min-width: 400px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .projects img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .mask {
+      height: 100%;
+      width: 100%;
+    }
+
+    .mask .text {
+      font-size: 80px;
+    }
+
+    .mask .subtext {
+      font-size: 40px;
+    }
+
+    .mask a {
+      font-size: 35px;
+    }
 }
