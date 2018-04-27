@@ -239,7 +239,17 @@ PROFILE STYLES
 .oval img {
   max-width: 500px;
   margin: 3%;
-  /*max-height: 300px;*/
+}
+
+.olwen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.olwen img {
+  max-width: 500px;
+  margin: 3%;
 }
 
 
